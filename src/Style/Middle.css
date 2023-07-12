@@ -9,7 +9,7 @@
 }
 
 .Banner {
-  height: 280px;
+  height: 30vh;
   position: relative;
 }
 
@@ -222,7 +222,7 @@
 } 
 
 .AudioList .SongsContainer {
-  height: 320px;
+  height: 40vh;
   overflow-y: scroll;
   overflow-x: hidden;
   /* background-color: red; */
