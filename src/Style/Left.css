@@ -1,0 +1,312 @@
+.Left{
+    z-index: 1;
+    width: 280px;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(34, 34, 34, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px 15px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+
+.LogoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+.Left .LogoContainer i:nth-child(1) {
+    font-size: 35px;
+}
+
+.Left .LogoContainer h2 {
+    font-size: 23px;
+}
+
+.SearchBox{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin-top: 20px;
+    color: #848484;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.SearchBox input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); */
+  padding-left: 45px;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.SearchBox i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.MenuContainer{
+    margin: 15px 0;
+}
+
+.tittle{
+    color: #848484;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.MenuContainer ul{
+    width: 100%;
+    padding: 0px;
+}
+
+.MenuContainer ul li{
+    list-style: none;
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.MenuContainer ul li a {
+    text-decoration: none;
+    color: #848484;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.MenuContainer ul li a i {
+    
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.MenuContainer ul li:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -15px;
+    width: 0px;
+    height: 100%;
+    background: #49e12e;
+    border-radius: 5px;
+}
+
+.MenuContainer ul li:hover::before,
+.MenuContainer ul li.active::before{
+    width: 5px;
+    transition: 0.3s;
+} 
+
+.MenuContainer ul li:hover a,
+.MenuContainer ul li.active a{
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.PlaylistContainer{
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.NameContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+    margin-bottom: 10px;
+    
+}
+
+.NameContainer p{
+    color: #848484;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.NameContainer i{
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.PlaylistScroll{
+    height: 300px;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    position: relative;
+}
+
+.Plist{
+    display: flex;
+    color: #848484;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 20px; 
+}
+
+.Plist:hover{
+    color: #f1f1f1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Plist i{
+    font-size: 18px;
+}
+
+.Plist i:nth-of-type(1){
+    margin-right: 15px;
+}
+
+.Plist i:nth-of-type(2){
+    margin-left: auto;
+}
+
+.Plist p{
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+
+.TrackList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.TrackList .Top{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.TrackList .Top img{
+    width: 70px !important;
+}
+
+.TrackList .Top p{
+    margin-left: 20px;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.TrackList .Top p span{
+    display: block;
+    font-size: 15px;
+    color: #848484;
+}
+.TrackList .Bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    
+    color: #848484;
+}
+.TrackList .Bottom i{
+    font-size: 18px;
+}
+
+.TrackList .Bottom i:hover{
+    color: #f1f1f1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.TrackList .Bottom input{
+    position: relative;
+    height: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.TrackList .Bottom input::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #49e12e;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: width 250ms linear;
+}
+
+.TrackList .Bottom input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    border: 2px solid #000;
+    cursor: pointer;
+    position: relative;
+    margin: -2px 0 0 0;
+    z-index: 3;
+    box-sizing: border-box;
+    transition: all 250ms linear;
+
+}
+
+@media screen and (max-width: 550px) {
+    .Left {
+      min-width: 64px;
+      width: 64px;
+    }
+  
+    .Left .SearchBox {
+      display: none;
+    }
+  
+    .Left .TrackList {
+      display: none;
+    }
+  
+    .Left .PlaylistContainer {
+      display: none;
+    }
+  
+    .Left .MenuContainer ul li a span {
+      display: none;
+    }
+  
+    .Left .MenuContainer ul li a i {
+      font-size: 24px;
+    }
+  
+    .Left .MenuContainer ul li {
+      margin: 25px 0;
+    }
+    .Left .LogoContainer h2 {
+        font-size: 23px;
+        margin-left: 30px;
+    }
+  }
