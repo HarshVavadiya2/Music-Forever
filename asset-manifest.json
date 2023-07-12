@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Music-Forever/static/css/main.9b0a04a3.css",
+    "main.js": "/Music-Forever/static/js/main.69f5c0f7.js",
+    "static/js/787.5d86c2a1.chunk.js": "/Music-Forever/static/js/787.5d86c2a1.chunk.js",
+    "static/media/artist.jpg": "/Music-Forever/static/media/artist.1162a757da452033436f.jpg",
+    "static/media/background.jpg": "/Music-Forever/static/media/background.8b16878b58cd04fe945c.jpg",
+    "static/media/track.png": "/Music-Forever/static/media/track.bddb5792891bf59741a8.png",
+    "index.html": "/Music-Forever/index.html",
+    "main.9b0a04a3.css.map": "/Music-Forever/static/css/main.9b0a04a3.css.map",
+    "main.69f5c0f7.js.map": "/Music-Forever/static/js/main.69f5c0f7.js.map",
+    "787.5d86c2a1.chunk.js.map": "/Music-Forever/static/js/787.5d86c2a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b0a04a3.css",
+    "static/js/main.69f5c0f7.js"
+  ]
+}
